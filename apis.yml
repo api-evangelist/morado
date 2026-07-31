@@ -1,8 +1,30 @@
 aid: morado
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/morado.png
 name: Morado
-description: 'Morado is a company surfaced as a portfolio company of qed-investors and added to the API
-  Evangelist network as a stub for enrichment. Sector: marketplace. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Morado is a Colombian fintech and B2B marketplace for the beauty and wellness
+  industry across Latin America, founded in 2022 by Angela Maria Acosta (an early
+  Rappi employee). It is the "everything store for beauty shops" — giving salons,
+  spas, and independent beauty entrepreneurs (a workforce that is majority women)
+  access to intelligent credit, working-capital lines, inventory supply, inventory
+  management, last-mile logistics, and digital tools through a 100% digital process,
+  even for businesses without a traditional financial history. Credit applications
+  run over WhatsApp with 30/60/90-day revolving lines and 3-12 month term products,
+  serving 32,000+ micro-business clients. Backed by QED Investors, Andreessen
+  Horowitz, Tiger Global, H20 Capital, Latitud, and Village Global. Public surface
+  is the moradocolombia.com marketing/credit site (built on Wix) — no first-party
+  developer API, though the Wix site exposes a hosted MCP endpoint and an llms.txt.
 url: https://raw.githubusercontent.com/api-evangelist/morado/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +34,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Marketplace
+- Fintech
+- Beauty
+- Wellness
+- Lending
+- Credit
+- Colombia
+- Latin America
+- B2B
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +53,29 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/morado-domain-security.yml
 - type: Website
-  url: https://soymorado.co/
+  url: https://www.moradocolombia.com/
+- type: About
+  url: https://www.moradocolombia.com/sobre-morado
+- type: SignUp
+  url: https://www.moradocolombia.com/solicita-tu-credito
+- type: Pricing
+  url: https://www.moradocolombia.com/tasas-y-tarifas
+- type: Support
+  url: https://www.moradocolombia.com/centro-de-informacion
+- type: TermsOfService
+  url: https://www.moradocolombia.com/terminos-y-condiciones
+- type: PrivacyPolicy
+  url: https://www.moradocolombia.com/politicas-de-privacidad
+- type: MCPServer
+  url: mcp/morado-mcp.yml
+  name: Morado Wix Site MCP
+- type: LLMsTxt
+  url: llms/morado-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

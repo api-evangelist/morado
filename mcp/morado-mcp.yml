@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://www.moradocolombia.com/llms.txt
+notes: >-
+  Morado's public site (moradocolombia.com) is built on Wix, which exposes a
+  hosted, standards-based Model Context Protocol (MCP) endpoint for the site.
+  This is a Wix-platform MCP surface (not a bespoke Morado API), advertised in
+  the site's llms.txt and verified live via a tools/list call on 2026-07-20.
+  No authentication is required to connect; only public site information is
+  accessible. There is no first-party Morado developer API.
+server:
+  name: Morado Wix Site MCP
+  platform: Wix Site MCP
+  transport: http
+  url: https://www.moradocolombia.com/_api/mcp
+  authentication: none
+  docs: https://dev.wix.com/docs/develop-websites/articles/get-started/about-the-wix-site-mcp
+capabilities:
+  - Get business info (contact details, location, hours)
+  - Discover products and services on offer
+  - Book services and make reservations
+  - Start a purchase (redirect to site for checkout)
+  - Answer visitor questions from public site content
+tools:
+  - name: GetBusinessDetails
+    description: Retrieve business and site information such as timezone, email, phone, and address.
+  - name: SearchInSite
+    description: Search for information within the site.
+    params: [searchTerm]
+  - name: SearchSiteApiDocs
+    description: Retrieve API documentation for the Wix business solutions installed on the site and how to use them.
+    params: [searchTerm]
+  - name: GenerateVisitorToken
+    description: Create a new visitor session and obtain a visitor access token; call before any CallWixSiteAPI request.
+  - name: CallWixSiteAPI
+    description: Call site API methods to act on behalf of a visitor (query data, book an appointment, start a purchase).
+    params: [visitorToken, url, method, body]
+  - name: ReadFullDocsArticle
+    description: Retrieve a full article from the Wix developer documentation portal.
+    params: [articleUrl]
+  - name: ReadFullDocsMethodSchema
+    description: Retrieve the full schema for a Wix API method; call before CallWixSiteAPI.
+    params: [articleUrl]
