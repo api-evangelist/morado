@@ -64,6 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Morado is a company surfaced as a portfolio company of qed-investors and added to the API Evangelist network as a stub for enrichment. Sector: marketplace. This profile is a lead awaiting the enrichment pipeline.
+Morado is a Colombian fintech and B2B marketplace for the beauty and wellness industry across Latin America, founded in 2022 by Angela Maria Acosta (an early Rappi employee). It is the "everything store for beauty shops" — giving salons, spas, and independent beauty entrepreneurs (a workforce that is majority women) access to intelligent credit, working-capital lines, inventory supply, inventory management, last-mile logistics, and digital tools through a 100% digital process, even for businesses without a traditional financial history. Credit applications run over WhatsApp with 30/60/90-day revolving lines and 3-12 month term products, serving 32,000+ micro-business clients. Backed by QED Investors, Andreessen Horowitz, Tiger Global, H20 Capital, Latitud, and Village Global. Public surface is the moradocolombia.com marketing/credit site (built on Wix) — no first-party developer API, though the Wix site exposes a hosted MCP endpoint and an llms.txt.
 
-Backed by: qed-investors — https://soymorado.co/
+**Areas:** Company · Marketplace · Fintech · Beauty · Wellness · Lending · Credit · Colombia · Latin America · B2B
+
+## Morado on APIs.io
+
+Everything profiled for Morado is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/morado/](https://apis.io/providers/morado/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Morado Wix Site MCP](https://apis.io/servers/morado/morado-wix-site-mcp/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Morado Domain Security](https://apis.io/security/morado/morado-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.moradocolombia.com/)
+- [Pricing](https://www.moradocolombia.com/tasas-y-tarifas)
+- [Sign up](https://www.moradocolombia.com/solicita-tu-credito)
+- [Support](https://www.moradocolombia.com/centro-de-informacion)
+- [Terms of service](https://www.moradocolombia.com/terminos-y-condiciones)
+- [Privacy policy](https://www.moradocolombia.com/politicas-de-privacidad)
+
+## API Evangelist rating
+
+**Kin Score 14.9** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 51.7 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 44.7 |
+
+**Agent readiness 2.2** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/morado/](https://apis.io/providers/morado/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Morado: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/morado/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
